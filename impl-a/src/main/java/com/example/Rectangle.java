@@ -9,13 +9,13 @@ import com.example.api.Shape;
  * Time: 3:39 PM
  */
 
-public class Rectagle implements Shape {
+public class Rectangle implements Shape {
 
     static{
-        DriverManager.register(new Rectagle());
+        DriverManager.register(new Rectangle());
     }
 
     public String getDetail() {
-        return "Hi ! from Rectagle";
+        return "Hi ! from Rectangle";
     }
 }
