@@ -21,4 +21,8 @@ public class DriverManager {
         return DriverManager.shape;
     }
 
+    public static synchronized void unRegister(){
+        DriverManager.shape = null;
+    }
+
 }
