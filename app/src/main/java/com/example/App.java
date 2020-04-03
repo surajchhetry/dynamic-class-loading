@@ -1,6 +1,6 @@
 package com.example;
 
-import com.example.api.DriverManager;
+import com.example.api.ShapeManager;
 import com.example.api.Shape;
 
 /**
@@ -13,7 +13,7 @@ public class App {
 
     public static void main(String[] arg) throws Exception {
         Class.forName("com.example.Circle");
-        Shape c = DriverManager.getShape();
+        Shape c = ShapeManager.getShape();
         System.out.println(c.getDetail());
     }
 }

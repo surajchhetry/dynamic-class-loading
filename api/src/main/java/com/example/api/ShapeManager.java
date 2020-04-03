@@ -6,23 +6,23 @@ package com.example.api;
  * Time: 3:48 PM
  */
 
-public class DriverManager {
+public class ShapeManager {
 
     private static Shape shape;
 
-    private DriverManager() {}
+    private ShapeManager() {}
 
     public static synchronized void register(Shape shape){
-        if(DriverManager.shape == null)
-            DriverManager.shape = shape;
+        if(ShapeManager.shape == null)
+            ShapeManager.shape = shape;
     }
 
     public static Shape getShape(){
-        return DriverManager.shape;
+        return ShapeManager.shape;
     }
 
     public static synchronized void unRegister(){
-        DriverManager.shape = null;
+        ShapeManager.shape = null;
     }
 
 }

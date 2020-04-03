@@ -1,6 +1,6 @@
 package com.example;
 
-import com.example.api.DriverManager;
+import com.example.api.ShapeManager;
 import com.example.api.Shape;
 
 /**
@@ -12,7 +12,7 @@ import com.example.api.Shape;
 public class Rectangle implements Shape {
 
     static{
-        DriverManager.register(new Rectangle());
+        ShapeManager.register(new Rectangle());
     }
 
     public String getDetail() {

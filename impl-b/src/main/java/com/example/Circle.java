@@ -1,6 +1,6 @@
 package com.example;
 
-import com.example.api.DriverManager;
+import com.example.api.ShapeManager;
 import com.example.api.Shape;
 
 /**
@@ -12,7 +12,7 @@ import com.example.api.Shape;
 public class Circle implements Shape {
 
     static{
-        DriverManager.register(new Circle());
+        ShapeManager.register(new Circle());
     }
     public String getDetail() {
         return "Hi ! from Circle";
