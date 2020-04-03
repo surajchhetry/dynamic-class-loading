@@ -10,8 +10,11 @@ public class DriverManager {
 
     private static Shape shape;
 
-    public static void register(Shape shape){
-        DriverManager.shape = shape;
+    private DriverManager() {}
+
+    public static synchronized void register(Shape shape){
+        if(DriverManager.shape == null)
+            DriverManager.shape = shape;
     }
 
     public static Shape getShape(){

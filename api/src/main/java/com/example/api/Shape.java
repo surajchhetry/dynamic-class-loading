@@ -9,4 +9,5 @@ package com.example.api;
 public interface Shape {
 
     String getDetail();
+
 }
